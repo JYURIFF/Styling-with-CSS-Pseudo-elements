@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.main-header {
+    font-size: 2em;
+    color: #ffffff;
+    margin: 20px 0;
+    position: relative;
+    padding: 0 60px; 
+}
+
+.intro-paragraph {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 20px;
+    position: relative;
+    padding: 0 40px; 
+}
+
+.button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #9d00ffa0;
+    border: none;
+    cursor: pointer;
+    margin: 20px auto;
+    position: relative;
+    padding: 0 30px; 
+    border-radius: 20px; 
+}
+
+
+.main-header::before,
+.main-header::after {
+    content: '⭐';
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00ff00; 
+}
+
+.main-header::before {
+    left: 10px;
+}
+
+.main-header::after {
+    right: 10px;
+}
+
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '“';
+    font-size: 2em;
+    color: #999;
+    position: absolute;
+}
+
+.intro-paragraph::before {
+    left: 10px;
+    top: -10px;
+}
+
+.intro-paragraph::after {
+    content: '”';
+    right: 10px;
+    bottom: -10px;
+}
+
+.button::before,
+.button::after {
+    content: '👉';
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.button::before {
+    left: 10px;
+}
+
+.button::after {
+    right: 10px;
+}
